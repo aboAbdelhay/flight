@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="image/logo flight.jpg"
+      type="image/x-icon"
+    />
+    <title>Flight</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-query.css" />
+  </head>
+  <body>
+    <!-- ?start up -->
+    <div class="up" id="up">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <div class="social-media position-fixed d-none d-lg-flex flex-column gap-3">
+      <div class="icon">
+        <a
+          href="https://www.facebook.com/profile.php?id=100010881736331&mibextid=ZbWKwL"
+          target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+      </div>
+      <div class="icon">
+        <a href="https://twitter.com/Ahmed_Sayed_Abd" target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+      </div>
+      <div class="icon">
+        <a
+          href="https://www.linkedin.com/in/ahmed-sayed-abdelhay"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <div class="icon">
+        <a href="https://github.com/aboAbdelhay" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+    </div>
+    <!-- ?end up -->
+    <!-- !start navbar -->
+    <header id="navbar">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <img
+            src="image/logo flight.jpg"
+            alt="logo flight"
+            class="rounded-circle"
+          />
+          <a class="navbar-brand mx-3 fs-2 mc fw-medium" href="#">flight</a>
+          <button
+            class="navbar-toggler shadow-none border-0 mc"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+          >
+            <!-- <span class="navbar-toggler-icon mc"></span> -->
+            <span> <i class="fa-solid fa-bars fs-2"></i></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarSupportedContent"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link rounded-3 active"
+                  aria-current="page"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded-3" href="#about">about</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link rounded-3 dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Trips
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Cairo</a></li>
+                  <li><a class="dropdown-item" href="#">Qatar</a></li>
+                  <li><a class="dropdown-item" href="#">Saudi Arabia</a></li>
+                  <li><a class="dropdown-item" href="#">Kuwait</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">more trips</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded-3" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <div
+              class="d-flex flex-column flex-lg-row gap-3 px-3 p-lg-0"
+              role="search"
+            >
+              <input
+                class="form-control me-2 shadow-none"
+                type="search"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+              <button class="btn btn-new" type="submit">Search</button>
+              <button
+                type="button"
+                class="btn btn-new"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                login
+              </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="staticBackdrop"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Login</h4>
+                      <button
+                        type="button"
+                        class="close border-0 bg-white text-danger fs-2"
+                        data-bs-dismiss="modal"
+                      >
+                        &times;
+                      </button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                      <form id="loginForm">
+                        <div class="form-group">
+                          <label for="username">Username:</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="username"
+                            required
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Email:</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            required
+                          />
+                        </div>
+                        <div class="form-check form-switch form-group my-2">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexSwitchCheckChecked"
+                            >Remember Me</label
+                          >
+                        </div>
+                      </form>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-bs-dismiss="modal"
+                      >
+                        Login
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- //////// -->
+    <!-- !end navbar -->
+    <main>
+      <!-- *start home -->
+      <section id="home" class="nvscroll">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators gap-2 d-flex">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="slider slider1">
+                <div
+                  class="info w-50 d-none d-md-block text-center mb-5 rounded-4 p-4"
+                >
+                  <h2
+                    class="mc display-lg-4 display-5 mb-3 bg-opacity-75 bg-white rounded-4"
+                  >
+                    <span class="element"></span>
+                  </h2>
+                  <p class="text-black-50 fs-6">
+                    "Discover amazing destinations worldwide with our
+                    competitive fares. Book your next adventure today and enjoy
+                    a seamless travel experience."
+                  </p>
+                  <button class="btn btn-new border-2 shadow-lg fs-5">
+                    <a href="#footer">Know more</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slider slider2">
+                <div
+                  class="info w-50 d-none d-md-block text-center mb-5 rounded-4 p-4 shadow-lg"
+                >
+                  <h2
+                    class="mc display-lg-4 display-6 mb-3 bg-opacity-75 bg-white rounded-4"
+                  >
+                    <span class="element">The Flight Website</span>
+                  </h2>
+                  <p class="text-black-50 fs-6">
+                    "Discover amazing destinations worldwide with our
+                    competitive fares. Book your next adventure today and enjoy
+                    a seamless travel experience."
+                  </p>
+                  <button class="btn btn-new border-2 shadow-lg fs-5">
+                    <a href="#footer">Know more</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slider slider3">
+                <div
+                  class="info w-50 d-none d-md-block text-center mb-5 rounded-4 p-4 shadow-lg"
+                >
+                  <h2
+                    class="mc display-lg-4 display-6 mb-3 bg-opacity-75 bg-white rounded-4"
+                  >
+                    <span class="element">The Flight Website</span>
+                  </h2>
+                  <p class="text-black-50 fs-6">
+                    "Discover amazing destinations worldwide with our
+                    competitive fares. Book your next adventure today and enjoy
+                    a seamless travel experience."
+                  </p>
+                  <button class="btn btn-new border-2 shadow-lg fs-5">
+                    <a href="#">Know more</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <i class="fa-solid fa-chevron-left fs-1 tr"></i>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <i class="fa-solid fa-chevron-right fs-1 tr"></i>
+          </button>
+        </div>
+      </section>
+      <!-- *end home -->
+      <!-- ?start about -->
+      <section id="about" class="nvscroll py-5 sg">
+        <div class="container text-center">
+          <h2 class="mb-4 fs-1 mc">About Us</h2>
+          <p class="mb-3 w-50 m-auto text-white">
+            "Discover amazing destinations worldwide with our competitive fares.
+            Book your next adventure today and enjoy a seamless travel
+            experience."
+          </p>
+          <button class="btn-main btn fs-5 rounded-3">
+            <a href="#clients">Learn More </a>
+          </button>
+        </div>
+      </section>
+      <!-- ?end  about-->
+      <!-- !start services -->
+      <section id="services" class="py-5">
+        <div class="container">
+          <div class="title py-4 text-center s2g rounded-4 mb-4">
+            <h3 class="fs-2 mc text-capitalize fw-bolder">
+              Poplar flight places in the world
+            </h3>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  France
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    France attracts tourists from around the globe with romantic
+                    cities like Paris and Nice. It's famous for historical
+                    landmarks such as the Eiffel Tower and the Louvre Museum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Japan
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Japan is a favorite destination for those who love
+                    technology and traditional culture. It offers stunning
+                    cities like Tokyo and Kyoto, unique cuisine, and beautiful
+                    natural landscapes.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  United Arab Emirates
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    The UAE is known for its modern cities like Dubai and Abu
+                    Dhabi. It offers a luxurious experience with towering
+                    skyscrapers, massive shopping malls, and beautiful beaches.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- !end  services-->
+      <!-- *start translate -->
+      <section id="translate" class="py-5 mt-5 sg">
+        <div class="container">
+          <div class="title py-4 text-center s2g rounded-4 mb-4">
+            <h3 class="fs-2 mc text-capitalize fw-bolder">
+              Translate From Any Language To Arabic
+            </h3>
+          </div>
+          <div class="info">
+            <p class="text-white fs-5 text-capitalize">
+              write and translate <span class="fw-bold">press here</span>
+            </p>
+            <textarea
+              class="form-control fs-5"
+              placeholder="Enter The Text ..."
+            ></textarea>
+            <button
+              type="button"
+              class="btn-main btn my-3"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Translate The Text"
+            >
+              Translate
+            </button>
+            <button
+              type="button"
+              class="btn-main btn m-3 copy"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              data-bs-title="Copy The Text"
+            >
+              Copy
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- *end  translate-->
+      <!-- *start counter -->
+      <section id="counter" class="py-5 my-5"></section>
+      <!-- *end counter -->
+      <!-- ?start clients -->
+      <section id="clients" class="nvscroll py-5">
+        <div class="container">
+          <div class="title py-4 text-center s2g rounded-4 mb-5">
+            <h3 class="fs-2 mc text-capitalize fw-bolder">
+              Poplar flight places in the world
+            </h3>
+          </div>
+          <div class="row g-md-5 gy-5 justify-content-center">
+            <div class="col-md-6 col-lg-4">
+              <div
+                class="box bg-white shadow-lg rounded-4 overflow-hidden pb-3"
+              >
+                <div class="img overflow-hidden">
+                  <img
+                    src="image/clients/egypt 1.jpg"
+                    class="w-100 p-3 rounded-4 tr"
+                    alt=""
+                  />
+                </div>
+                <div class="info px-4">
+                  <div
+                    class="d-flex justify-content-between flex-wrap align-items-center my-3"
+                  >
+                    <h4 class="mc fs-2">Egypt</h4>
+                    <button class="btn btn-new">Know More</button>
+                  </div>
+                  <p class="">
+                    Egypt, with its ancient history and monumental pyramids, is
+                    a treasure trove of archaeological wonders. The Nile River,
+                    bustling markets, and historic temples make it a fascinating
+                    destination for travelers.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div
+                class="box bg-white shadow-lg rounded-4 overflow-hidden pb-3"
+              >
+                <div class="img overflow-hidden">
+                  <img
+                    src="image/clients/japan 1.jpg"
+                    class="w-100 p-3 rounded-4 tr"
+                    alt=""
+                  />
+                </div>
+                <div class="info px-4">
+                  <div
+                    class="d-flex justify-content-between flex-wrap align-items-center my-3"
+                  >
+                    <h4 class="mc fs-2">Japan</h4>
+                    <button class="btn btn-new">Know More</button>
+                  </div>
+                  <p class="">
+                    Japan, known for its rich cultural heritage and advanced
+                    technology, offers a unique blend of traditional temples and
+                    modern skyscrapers. Its cuisine, cherry blossoms, and
+                    courteous people are world-famous.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div
+                class="box bg-white shadow-lg rounded-4 overflow-hidden pb-3"
+              >
+                <div class="img overflow-hidden">
+                  <img
+                    src="image/clients/italy 1.jpg"
+                    class="w-100 p-3 rounded-4 tr"
+                    alt=""
+                  />
+                </div>
+                <div class="info px-4">
+                  <div
+                    class="d-flex justify-content-between flex-wrap align-items-center my-3"
+                  >
+                    <h4 class="mc fs-2">Italy</h4>
+                    <button class="btn btn-new">Know More</button>
+                  </div>
+                  <p class="">
+                    Italy, home to the Renaissance and famous for its art,
+                    architecture, and cuisine, boasts iconic landmarks like the
+                    Colosseum, the Vatican, and the canals of Venice. Its
+                    diverse landscapes and rich history.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div
+                class="box bg-white shadow-lg rounded-4 overflow-hidden pb-3"
+              >
+                <div class="img overflow-hidden">
+                  <img
+                    src="image/clients/Barazil.jpg"
+                    class="w-100 p-3 rounded-4 tr"
+                    alt=""
+                  />
+                </div>
+                <div class="info px-4">
+                  <div
+                    class="d-flex justify-content-between flex-wrap align-items-center my-3"
+                  >
+                    <h4 class="mc fs-2">Brazil</h4>
+                    <button class="btn btn-new">Know More</button>
+                  </div>
+                  <p class="">
+                    Brazil, the largest country in South America, is renowned
+                    for its vibrant culture, beautiful beaches, and the Amazon
+                    rainforest. The annual Rio Carnival showcases its lively
+                    spirit and musical heritage.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div
+                class="box bg-white shadow-lg rounded-4 overflow-hidden pb-3"
+              >
+                <div class="img overflow-hidden">
+                  <img
+                    src="image/clients/paris 1.jpg"
+                    class="w-100 p-3 rounded-4 tr"
+                    alt=""
+                  />
+                </div>
+                <div class="info px-4">
+                  <div
+                    class="d-flex justify-content-between flex-wrap align-items-center my-3"
+                  >
+                    <h4 class="mc fs-2">France</h4>
+                    <button class="btn btn-new">Know More</button>
+                  </div>
+                  <p class="">
+                    France attracts tourists from around the globe with romantic
+                    cities like Paris and Nice. It's famous for historical
+                    landmarks such as the Eiffel Tower and the Louvre Museum the
+                    globe with romantic.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div
+                class="box bg-white shadow-lg rounded-4 overflow-hidden pb-3"
+              >
+                <div class="img overflow-hidden">
+                  <img
+                    src="image/clients/canda 2.jpg"
+                    class="w-100 p-3 rounded-4 tr"
+                    alt=""
+                  />
+                </div>
+                <div class="info px-4">
+                  <div
+                    class="d-flex justify-content-between flex-wrap align-items-center my-3"
+                  >
+                    <h4 class="mc fs-2">Canada</h4>
+                    <button class="btn btn-new">Know More</button>
+                  </div>
+                  <p class="">
+                    Canada, the second-largest country in the world, is
+                    celebrated for its breathtaking landscapes, from the Rocky
+                    Mountains to Niagara Falls. Its multicultural cities,
+                    friendly people.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div
+                class="box bg-white shadow-lg rounded-4 overflow-hidden pb-3"
+              >
+                <div class="img overflow-hidden">
+                  <img
+                    src="image/clients/egypt 1.jpg"
+                    class="w-100 p-3 rounded-4 tr"
+                    alt=""
+                  />
+                </div>
+                <div class="info px-4">
+                  <div
+                    class="d-flex justify-content-between flex-wrap align-items-center my-3"
+                  >
+                    <h4 class="mc fs-2">Egypt</h4>
+                    <button class="btn btn-new">Know More</button>
+                  </div>
+                  <p class="">
+                    Egypt, with its ancient history and monumental pyramids, is
+                    a treasure trove of archaeological wonders. The Nile River,
+                    bustling markets, and historic temples make it a fascinating
+                    destination for travelers.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div
+                class="box bg-white shadow-lg rounded-4 overflow-hidden pb-3"
+              >
+                <div class="img overflow-hidden">
+                  <img
+                    src="image/clients/japan 1.jpg"
+                    class="w-100 p-3 rounded-4 tr"
+                    alt=""
+                  />
+                </div>
+                <div class="info px-4">
+                  <div
+                    class="d-flex justify-content-between flex-wrap align-items-center my-3"
+                  >
+                    <h4 class="mc fs-2">Japan</h4>
+                    <button class="btn btn-new">Know More</button>
+                  </div>
+                  <p class="">
+                    Japan, known for its rich cultural heritage and advanced
+                    technology, offers a unique blend of traditional temples and
+                    modern skyscrapers. Its cuisine, cherry blossoms, and
+                    courteous people are world-famous.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ?end  clients-->
+      <!-- !start team-->
+      <section id="team" class="py-5 sg">
+        <div class="title py-4 text-center s2g rounded-4 mb-5">
+          <h3 class="fs-2 mc text-capitalize fw-bolder">Thanks For Team</h3>
+        </div>
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="box p-3 bg-white rounded-4 text-white box1">
+                <div class="top">
+                  <h4>All thanks and appreciation</h4>
+                  <span><i class="fa-solid fa-clock"></i> May 22,2024</span>
+                </div>
+                <div class="bottom mt-5">
+                  <div class="img rounded-circle overflow-hidden">
+                    <img src="image/nasr.jpg" class="w-100" alt="" />
+                  </div>
+                  <h3 class="fw-bold">Eng.Nasr Ali</h3>
+                  <div
+                    class="d-flex justify-content-between flex-wrap align-items-center mt-0 mt-md-4 mt-xl-0"
+                  >
+                    <div class="left">
+                      <span>Director of UI/UX</span>
+                    </div>
+                    <div class="right">
+                      <a
+                        class="btn btn-main"
+                        href="https://www.linkedin.com/in/nasr-ali-b06120256/"
+                        target="_blank"
+                      >
+                        Linkedin <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="box p-3 bg-white rounded-4 text-white box2">
+                <div class="top">
+                  <h4>All thanks and appreciation</h4>
+                  <span><i class="fa-solid fa-clock"></i> May 22,2024</span>
+                </div>
+                <div class="bottom mt-5">
+                  <div class="img rounded-circle overflow-hidden">
+                    <img src="image/ahmed.jpeg" class="w-100" alt="" />
+                  </div>
+                  <h3 class="fw-bold">Eng.Ahmed Sayed</h3>
+                  <div
+                    class="d-flex justify-content-between flex-wrap align-items-center"
+                  >
+                    <div class="left">
+                      <span>Director of Front-End</span>
+                    </div>
+                    <div class="right">
+                      <a
+                        class="btn btn-main"
+                        href="https://www.linkedin.com/in/ahmed-sayed-abdelhay"
+                        target="_blank"
+                      >
+                        Linkedin <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="box p-3 bg-white rounded-4 text-white box3">
+                <div class="top">
+                  <h4>All thanks and appreciation</h4>
+                  <span><i class="fa-solid fa-clock"></i> May 22,2024</span>
+                </div>
+                <div class="bottom mt-5">
+                  <div class="img rounded-circle overflow-hidden">
+                    <img src="image/Abdullah.jpeg" class="w-100" alt="" />
+                  </div>
+                  <h3 class="fw-bold">Eng.Abdullah Hassan</h3>
+                  <div
+                    class="d-flex justify-content-between flex-wrap align-items-center"
+                  >
+                    <div class="left">
+                      <span>Director of Back-End</span>
+                    </div>
+                    <div class="right">
+                      <a
+                        class="btn btn-main"
+                        href="https://www.linkedin.com/in/abdalla-hasan-6a1a3a303/"
+                        target="_blank"
+                      >
+                        Linkedin <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- !end  team->
+      <!-- *start events -->
+      <section id="events" class="py-5 my-5">
+        <div class="title py-4 text-center s2g rounded-4 mb-5">
+          <h3 class="fs-2 mc text-capitalize fw-bolder">
+            poplar events in world
+          </h3>
+        </div>
+        <div class="container">
+          <div
+            class="box box1 rounded-3 overflow-hidden position-relative mb-5"
+          >
+            <div class="img position-absolute top-0 h-100">
+              <img src="image/clients/canda 1.jpg" class="w-100 h-100" alt="" />
+            </div>
+            <div class="text w-50 p-5">
+              <h3>Name Event</h3>
+              <span class="position-relative"
+                ><i class="fa-solid fa-calendar-days"></i> may, 22/2024</span
+              >
+              <p class="mb-5 mt-3">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+                voluptas dolor excepturi ducimus ut, repellendus odio explicabo
+                ipsam fugiat voluptates numquam nulla impedit maxime nisi.
+              </p>
+              <div class="btn-groups d-flex gap-3">
+                <button class="btn btn-new">
+                  <i class="fa-solid fa-podcast"></i>podcast
+                </button>
+                <button class="btn btn-new">
+                  <i class="fa-solid fa-clock"></i>55 mins
+                </button>
+                <button class="btn btn-new">
+                  <i class="fa-solid fa-play"></i>play Episode
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="box box2 rounded-3 overflow-hidden position-relative mb-5"
+          >
+            <div class="img position-absolute top-0 h-100">
+              <img src="image/clients/egypt 1.jpg" class="w-100 h-100" alt="" />
+            </div>
+            <div class="text ms-auto w-75 p-5">
+              <h3>Name Event</h3>
+              <span class="position-relative"
+                ><i class="fa-solid fa-calendar-days"></i> may, 22/2024</span
+              >
+              <p class="mb-5 mt-3">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+                voluptas dolor excepturi ducimus ut, repellendus odio explicabo
+                ipsam fugiat voluptates numquam nulla impedit maxime nisi.
+              </p>
+              <div class="btn-groups d-flex gap-3">
+                <button class="btn btn-new">
+                  <i class="fa-solid fa-podcast"></i>podcast
+                </button>
+                <button class="btn btn-new">
+                  <i class="fa-solid fa-clock"></i>55 mins
+                </button>
+                <button class="btn btn-new">
+                  <i class="fa-solid fa-play"></i>play Episode
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="box box1 rounded-3 overflow-hidden position-relative mb-5"
+          >
+            <div class="img position-absolute top-0 h-100">
+              <img
+                src="image/clients/emarat 1.jpg"
+                class="w-100 h-100"
+                alt=""
+              />
+            </div>
+            <div class="text w-50 p-5">
+              <h3>Name Event</h3>
+              <span class="position-relative"
+                ><i class="fa-solid fa-calendar-days"></i> may, 22/2024</span
+              >
+              <p class="mb-5 mt-3">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+                voluptas dolor excepturi ducimus ut, repellendus odio explicabo
+                ipsam fugiat voluptates numquam nulla impedit maxime nisi.
+              </p>
+              <div class="btn-groups d-flex gap-3">
+                <button class="btn btn-new">
+                  <i class="fa-solid fa-podcast"></i>podcast
+                </button>
+                <button class="btn btn-new">
+                  <i class="fa-solid fa-clock"></i>55 mins
+                </button>
+                <button class="btn btn-new">
+                  <i class="fa-solid fa-play"></i>play Episode
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="box box2 rounded-3 overflow-hidden position-relative mb-5"
+          >
+            <div class="img position-absolute top-0 h-100">
+              <img
+                src="image/clients/Australia .jpg"
+                class="w-100 h-100"
+                alt=""
+              />
+            </div>
+            <div class="text ms-auto w-75 p-5">
+              <h3>Name Event</h3>
+              <span class="position-relative"
+                ><i class="fa-solid fa-calendar-days"></i> may, 22/2024</span
+              >
+              <p class="mb-5 mt-3">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+                voluptas dolor excepturi ducimus ut, repellendus odio explicabo
+                ipsam fugiat voluptates numquam nulla impedit maxime nisi.
+              </p>
+              <div class="btn-groups d-flex gap-3">
+                <button class="btn btn-new">
+                  <i class="fa-solid fa-podcast"></i>podcast
+                </button>
+                <button class="btn btn-new">
+                  <i class="fa-solid fa-clock"></i>55 mins
+                </button>
+                <button class="btn btn-new">
+                  <i class="fa-solid fa-play"></i>play Episode
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- *end  events-->
+      <!-- *start contact -->
+      <section id="contact" class="nvscroll py-5 sg">
+        <div class="title py-4 text-center s2g rounded-4 mb-5">
+          <h3 class="fs-2 mc text-capitalize fw-bolder">Contact Us</h3>
+        </div>
+        <div class="container">
+          <div class="row g-md-5 g-y-5">
+            <div class="col-md-6 col-lg-3">
+              <div class="box bg-white text-center rounded-3 py-3 shadow-lg tr">
+                <p class="mc fs-5">Subscript Now</p>
+                <div class="icon rounded-circle d-grid m-auto my-3 tr">
+                  <a
+                    href="https://twitter.com/Ahmed_Sayed_Abd"
+                    class="m-auto tr"
+                  >
+                    <i class="fa-brands fa-twitter fs-1 mc d-block tr"></i>
+                  </a>
+                </div>
+                <a
+                  href="https://twitter.com/Ahmed_Sayed_Abd"
+                  target="_blank"
+                  class="mc fs-5"
+                  >Go To Link</a
+                >
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="box bg-white text-center rounded-3 py-3 shadow-lg tr">
+                <p class="mc fs-5">Follow</p>
+                <div class="icon rounded-circle d-grid m-auto my-3 tr">
+                  <a href="#contact" class="m-auto tr">
+                    <i class="fa-brands fa-whatsapp fs-1 mc d-block tr"></i>
+                  </a>
+                </div>
+                <a href="#contact" class="mc fs-5">Go To Link</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="box bg-white text-center rounded-3 py-3 shadow-lg tr">
+                <p class="mc fs-5">Like The Page</p>
+                <div class="icon rounded-circle d-grid m-auto my-3 tr">
+                  <a
+                    href="https://www.linkedin.com/in/ahmed-sayed-abdelhay"
+                    target="_blank"
+                    class="m-auto tr"
+                  >
+                    <i class="fa-brands fa-linkedin fs-1 mc d-block tr"></i>
+                  </a>
+                </div>
+                <a
+                  href="https://www.linkedin.com/in/ahmed-sayed-abdelhay"
+                  target="_blank"
+                  class="mc fs-5"
+                  >Go To Link</a
+                >
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="box bg-white text-center rounded-3 py-3 shadow-lg tr">
+                <p class="mc fs-5">Watch Videos</p>
+                <div class="icon rounded-circle d-grid m-auto my-3 tr">
+                  <a
+                    href="https://instagram.com/abo_abdelhay"
+                    target="_blank"
+                    class="m-auto tr"
+                  >
+                    <i class="fa-brands fa-instagram fs-1 mc d-block tr"></i>
+                  </a>
+                </div>
+                <a
+                  href="https://instagram.com/abo_abdelhay"
+                  target="_blank"
+                  class="mc fs-5"
+                  >Go To Link</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- *end  contact-->
+    </main>
+    <!-- ?start footer -->
+    <footer id="footer" class="py-5">
+      <div class="container text-center">
+        <div class="row border-bottom justify-content-center gy-5">
+          <div class="col-md-6 col-xl-4">
+            <div class="box text-white text-center">
+              <h4 class="fw-bold">
+                <img
+                  src="image/logo flight.jpg"
+                  class="logo"
+                  alt=""
+                />information details
+              </h4>
+              <ul class="d-flex flex-column gap-2 mt-5">
+                <li><a href="#footer">tel:000-000-000</a></li>
+                <li><a href="#footer">Address:Egypt</a></li>
+                <li><a href="#footer">Email:000-000</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div class="box text-white text-center">
+              <h4 class="fw-bold">
+                <img src="image/logo flight.jpg" class="logo" alt="" />Important
+                Links
+              </h4>
+              <ul class="d-flex flex-column gap-2 mt-5">
+                <li><a href="#footer">Visit Us</a></li>
+                <li><a href="#footer">Take a Look</a></li>
+                <li><a href="#footer">Your Healthy is more a Important</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div class="box text-white text-center">
+              <h4 class="fw-bold">
+                <img src="image/logo flight.jpg" class="logo" alt="" />vision
+              </h4>
+              <ul class="d-flex flex-column gap-2 mt-5">
+                <li><a href="#footer">Service for all</a></li>
+                <li><a href="#footer">Provide best services</a></li>
+                <li><a href="#footer">you will be better than before</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p
+          class="fs-3 text-uppercase py-2 px-2 mt-5 m-auto fw-bold rounded-3 tr"
+        >
+          copy right &copy; 2024 ahmed sayed abdelhay good compay all right
+        </p>
+      </div>
+    </footer>
+    <!-- ?end  footer-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/style.js"></script>
+  </body>
+</html>
